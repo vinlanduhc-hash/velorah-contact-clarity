@@ -1,4 +1,5 @@
 import { ArrowUpRight } from 'lucide-react';
+import { ShapeGridBackground } from './ShapeGridBackground';
 import dotPreview from '@/assets/dot.png.asset.json';
 import evolvePreview from '@/assets/evolve.png.asset.json';
 import kusoooPreview from '@/assets/kusooo.png.asset.json';
@@ -33,6 +34,7 @@ const PROJECTS = [
 export function Studio() {
   return (
     <section id="studio" className="relative z-10 w-full overflow-hidden px-6 py-32 sm:py-40">
+      <ShapeGridBackground />
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mb-20 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="reveal">
