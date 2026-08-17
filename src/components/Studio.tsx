@@ -1,11 +1,14 @@
 import { ArrowUpRight } from 'lucide-react';
+import dotPreview from '@/assets/dot.png.asset.json';
+import evolvePreview from '@/assets/evolve.png.asset.json';
+import kusoooPreview from '@/assets/kusooo.png.asset.json';
 
 const PROJECTS = [
   {
     title: 'dot.',
     category: 'Site expérimental - Interaction',
     year: '2026',
-    image: 'https://images.pexels.com/photos/15302913/pexels-photo-15302913.jpeg?auto=compress&cs=tinysrgb&h=900&w=1400',
+    image: dotPreview.url,
     description: 'Une expérience éditoriale minimaliste, pensée autour du calme et de la connexion.',
     href: 'https://dotdesign.kusooo.fr',
   },
@@ -13,7 +16,7 @@ const PROJECTS = [
     title: 'Evolve Intelligence',
     category: 'Page de conversion - IA',
     year: '2026',
-    image: 'https://images.pexels.com/photos/17483848/pexels-photo-17483848.jpeg?auto=compress&cs=tinysrgb&h=900&w=1400',
+    image: evolvePreview.url,
     description: "Une page de conversion technologique immersive pour une plateforme d'intelligence modulaire.",
     href: 'https://beyondpixel.kusooo.fr',
   },
@@ -21,7 +24,7 @@ const PROJECTS = [
     title: 'KUSOOO',
     category: 'Hero expérimental - Motion',
     year: '2026',
-    image: 'https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=900&w=1400',
+    image: kusoooPreview.url,
     description: "Un hero guidé par le scroll, aux typographies superposées et à l'énergie rétro-futuriste.",
     href: 'https://evolveintelligence.kusooo.fr',
   },
