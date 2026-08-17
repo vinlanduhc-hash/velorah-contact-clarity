@@ -8,8 +8,8 @@ export function LoadingScreen({ onComplete }: LoadingScreenProps) {
   const [progress, setProgress] = useState(6);
   const [isLeaving, setIsLeaving] = useState(false);
   const finishRef = useRef(false);
-  const leaveTimerRef = useRef<number>();
-  const completeTimerRef = useRef<number>();
+  const leaveTimerRef = useRef<number | undefined>(undefined);
+  const completeTimerRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const finish = () => {

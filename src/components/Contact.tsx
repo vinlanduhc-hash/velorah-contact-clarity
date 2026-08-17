@@ -15,7 +15,7 @@ export function Contact() {
     setStatus('submitting');
     try {
       const { createClient } = await import('@supabase/supabase-js');
-      const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_ANON_KEY);
+      const supabase = createClient(import.meta.env['VITE_SUPABASE_URL'] as string, import.meta.env['VITE_SUPABASE_ANON_KEY'] as string);
       const { error } = await supabase
         .from('contact_messages')
         .insert({ name: name.trim(), email: email.trim(), message: message.trim() });
